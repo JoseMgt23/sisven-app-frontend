@@ -8,7 +8,10 @@ import EditarCategoria from '@/component/Categorias/EditarCategoria'
 import NewCategoria from '@/component/Categorias/NewCategoria'
 
 import Customers from '@/view/Customers.vue'
+
 import PayModes from '@/view/PayModes.vue'
+import EditarPayMode from '@/component/PayModes/EditarPayMode'
+import NewPayMode from '@/component/PayModes/NewPayMode'
 
 import EditarProduct from '@/components/Products/EditarProduct.vue'
 import NewProduct from '@/components/Products/NewProduct.vue'
@@ -66,6 +69,16 @@ const routes = [
     path: '/paymodes',
     name: 'PayModes',
     component: PayModes
+  },
+  {
+    path: '/editar-paymode/',
+    name: 'EditarPayMode',
+    component: EditarCategoria
+  },
+  {
+    path: '/add-paymode/',
+    name: 'NewPayMode',
+    component: NewPayMode
   }
 ]
 
