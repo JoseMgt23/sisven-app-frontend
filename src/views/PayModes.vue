@@ -11,10 +11,10 @@
                </tr>
            </thead>
            <tbody>
-               <tr v-for="(customer,index) in customers" :key="index">
-                   <th scope="row">{{ index+1 }}</th>
-                   <td>{{ customer.name }}</td>
-                   <td>{{ customer.observation }}</td>
+               <tr v-for="(paymode,index) in paymodes" :key="index">
+                   <th scope="row">{{ index+1 }}</th    >
+                   <td>{{ paymode.name }}</td>
+                   <td>{{ paymode.observation }}</td>
                </tr>
            </tbody>
        </table>
