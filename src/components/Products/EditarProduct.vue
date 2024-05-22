@@ -66,7 +66,7 @@ export default {
     name: 'EditarProducto',
     data(){
         return{
-            producto:{
+            product:{
                 id: 0,
                 name: '',
                 price: 0,
@@ -81,7 +81,7 @@ export default {
             this.$router.push({name: 'Products'})
         },
 
-        async updateProducto(){
+        async updateProduct(){
             const res = await axios.put(`http://127.0.0.1:8000/api/products/${this.product.id}`, this.product)
             if (res.status == 200){
                 this.$router.push({name:'Products'})
