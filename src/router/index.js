@@ -5,6 +5,8 @@ import Products from '@/views/Products.vue'
 import Categorias from '@/views/Categorias.vue'
 import Customers from '@/view/Customers.vue'
 import PayModes from '@/view/PayModes.vue'
+import EditarProduct from '@/components/Products/EditarProduct.vue'
+import NewProduct from '@/components/Products/NewProduct.vue'
 
 const routes = [
   {
@@ -24,6 +26,16 @@ const routes = [
     path: '/products',
     name: 'Products',
     component: Products
+  },
+  {
+    path: '/editar-product/:id',
+    name: 'EditarProduct',
+    component: EditarProduct
+  },
+  {
+    path: '/add-product/',
+    name: 'NewProduct',
+    component: NewProduct
   },
   {
     path: '/categorias',
