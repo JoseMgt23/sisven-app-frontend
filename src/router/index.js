@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import Products from '@/views/Products.vue'
 import Categorias from '@/views/Categorias.vue'
 import Customers from '@/view/Customers.vue'
+import PayModes from '@/view/PayModes.vue'
 
 const routes = [
   {
@@ -33,6 +34,11 @@ const routes = [
     path: '/customers',
     name: 'Customers',
     component: Customers
+  },
+  {
+    path: '/paymodes',
+    name: 'PayModes',
+    component: PayModes
   }
 ]
 
