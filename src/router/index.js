@@ -8,6 +8,8 @@ import EditarCategoria from '@/component/Categorias/EditarCategoria'
 import NewCategoria from '@/component/Categorias/NewCategoria'
 
 import Customers from '@/view/Customers.vue'
+import EditarCustomer from '@/component/Customers/EditarCustomer'
+import NewCustomer from '@/component/Customers/NewCustomer'
 
 import PayModes from '@/view/PayModes.vue'
 import EditarPayMode from '@/component/PayModes/EditarPayMode'
@@ -66,6 +68,16 @@ const routes = [
     component: Customers
   },
   {
+    path: '/editar-customer/:id',
+    name: 'EditarCustomer',
+    component: EditarCustomer
+  },
+  {
+    path: '/add-customer/',
+    name: 'NewCustomer',
+    component: NewCustomer
+  },
+  {
     path: '/paymodes',
     name: 'PayModes',
     component: PayModes
@@ -73,7 +85,7 @@ const routes = [
   {
     path: '/editar-paymode/',
     name: 'EditarPayMode',
-    component: EditarCategoria
+    component: EditarPayMode
   },
   {
     path: '/add-paymode/',
