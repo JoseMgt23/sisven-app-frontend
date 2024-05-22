@@ -9,6 +9,7 @@
                 <th scope="col">Precio</th>
                 <th scope="col">Existencia</th>
                 <th scope="col">Categorias</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
